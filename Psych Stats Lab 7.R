@@ -83,27 +83,9 @@ model_2"
                                                                                                                                           Error: unexpected symbol in:
                                                                                                                                           "                             scale_fill_viridis_d(option = "mako", begin = 0.3, end = 0.85)   
 model_2"
-                                                                                                                                        > model_1 <- ggplot(Household_Pulse_data, aes(x = KIDS_LT5Y, fill = MHLTH_NEED)) 
-                                                                                                                                        > > model_1 + geom_bar(position = "fill") + 
-                                                                                                                                          Error: unexpected '>' in ">"
-                                                                                                                                        > model_1 <- ggplot(Household_Pulse_data, aes(x = KIDS_LT5Y, fill = MHLTH_NEED))  model_1 + geom_bar(position = "fill") + 
-                                                                                                                                          Error: unexpected symbol in "model_1 <- ggplot(Household_Pulse_data, aes(x = KIDS_LT5Y, fill = MHLTH_NEED))  model_1"
-                                                                                                                                        > model_1 <- ggplot(Household_Pulse_data, aes(x = KIDS_LT5Y, fill = MHLTH_NEED)) 
-                                                                                                                                        > model_1 <- geom_bar(position = "fill") + 
-                                                                                                                                          +     +     scale_fill_viridis_d(option = "mako", begin = 0.3, end = 0.85)  
-                                                                                                                                        Error in `+.gg`:
-                                                                                                                                          ! Cannot use `+` with a single argument
-                                                                                                                                        ℹ Did you accidentally put `+` on a new line?
-                                                                                                                                          Run `rlang::last_trace()` to see where the error occurred.
-                                                                                                                                        > model_1 <- ggplot(Household_Pulse_data, aes(x = KIDS_LT5Y, fill = MHLTH_NEED)) 
-                                                                                                                                        > model_1 <- geom_bar(position = "fill") + 
-                                                                                                                                          +          scale_fill_viridis_d(option = "mako", begin = 0.3, end = 0.85)   
-                                                                                                                                        Error in `+.gg`:
-                                                                                                                                          ! Cannot add <ggproto> objects together
-                                                                                                                                        ℹ Did you forget to add this object to a <ggplot> object?
-                                                                                                                                          Run `rlang::last_trace()` to see where the error occurred.
-                                                                                                                                        > model_1 <- ggplot(Household_Pulse_data, aes(x = KIDS_LT5Y, fill = MHLTH_NEED)) 
-                                                                                                                                        > model_1 <- geom_bar(position = "fill") 
+                                                                                                                                      
+                                                                                                                                        > model_3 <- ggplot(Household_Pulse_data, aes(x = KIDS_LT5Y, fill = MHLTH_NEED)) 
+                                                                                                                                        > model_3 <- geom_bar(position = "fill") 
                                                                                                                                         >          scale_fill_viridis_d(option = "mako", begin = 0.3, end = 0.85)    
                                                                                                                                         <ggproto object: Class ScaleDiscrete, Scale, gg>
                                                                                                                                           aesthetics: fill
@@ -145,10 +127,10 @@ model_2"
                                                                                                                                         transform: function
                                                                                                                                         transform_df: function
                                                                                                                                         super:  <ggproto object: Class ScaleDiscrete, Scale, gg>
-                                                                                                                                          > model_1 <- ggplot(Household_Pulse_data, aes(x = KIDS_LT5Y, fill = MHLTH_NEED)) 
-                                                                                                                                        > model_1 <- geom_bar(position = "fill") 
-                                                                                                                                        > model_1 <- ggplot(Household_Pulse_data, aes(x = KIDS_LT5Y, fill = MHLTH_NEED)) 
-                                                                                                                                        > model_1 <- geom_bar(position = "fill")  
+                                                                                                                                          > model_3 <- ggplot(Household_Pulse_data, aes(x = KIDS_LT5Y, fill = MHLTH_NEED)) 
+                                                                                                                                        > model_3 <- geom_bar(position = "fill") 
+                                                                                                                                        > model_3 <- ggplot(Household_Pulse_data, aes(x = KIDS_LT5Y, fill = MHLTH_NEED)) 
+                                                                                                                                        > model_3 <- geom_bar(position = "fill")  
                                                                                                                                         Call:
                                                                                                                                           lm(formula = as.numeric(KIDS_LT5Y_recode) ~ RRACE + MHLTH_NEED + 
                                                                                                                                                TENURE, data = Household_Pulse_data)
@@ -166,8 +148,16 @@ model_2"
                                                                                                                                         -0.063938                                            -0.064030  
                                                                                                                                         TENUREhousing occupied without rent  
                                                                                                                                         -0.067423  
-                                                                                                                                        model_3 <- glm(as.numeric(Household_Pulse_data$KIDS_LT5Y) ~ Household_Pulse_data$RRACE + Household_Pulse_data$MHLTH_NEED+ Household_Pulse_data$TENURE + Household_Pulse_data$EEDUC)  
+                                                                                                                                        model_4 <- glm(as.numeric(Household_Pulse_data$KIDS_LT5Y) ~ Household_Pulse_data$RRACE + Household_Pulse_data$MHLTH_NEED+ Household_Pulse_data$TENURE + Household_Pulse_data$EEDUC)  
                                                                                                                                         > View(model_3)
-                                                                                                                                        > model_4 <- glm(as.numeric(Household_Pulse_data$KIDS_LT5Y) ~ Household_Pulse_data$RRACE*Household_Pulse_data$MHLTH_NEED*Household_Pulse_data$TENURE*Household_Pulse_data$EEDUC)
+                                                                                                                                        > model_5 <- glm(as.numeric(Household_Pulse_data$KIDS_LT5Y) ~ Household_Pulse_data$RRACE*Household_Pulse_data$MHLTH_NEED*Household_Pulse_data$TENURE*Household_Pulse_data$EEDUC)
                                                                                                                                       
-                                                                                                                                        > 
+                                                                                                                                        > to begin I factor recoded the respones in the KIDS_LT5Y to make "NA' into 0 and "Kid in HH under 5" into 1. THis way the Computer can process the data better. THen I used the "lm" 
+function to carrying out a regression. In my Lm forumala i wanted to see the interaction between having Kids in the house hold under 5 or "KID_LT5Y" and race. I wanted to see if differnt racial groups have differnt responses to having younger children in the home. While every racial group had a statiscially signifact results
+the african american group had a higher result than the other racial groupds. That is model 1. After that I decided to make a graph to represent my findings which is model 2.  I then created another graph which looked at this time Kids in  the HH under 5 and Mental health condition, that is model 3. THen I did a another regression
+using the "glm" function to find an interaction between, Kids in the HH under 5, Mental health needs, Race, tenure and education. I then did the same again for model 5 this time i mutiplied the varibales, race, mental health, tenure and education. 
+
+For this week's article reading I was reading the "The great rewiring: is social media really behind an epidemic of teenage mental illness?" article and looking at the reference section to see the other research that 
+the authors used to prove thier work. From those other papers, it seems that social media cannot be soley blamed for the rise in mental health illnesses in American youth. What is most likey happening is a combination of factors from the COVID-19 pandemic,
+more people going to get mental health diagnoses, economic trends and external politcal factors which are all working with social media to cause an increase in mental health illness. My job now is to collect and show the data and how it proves that social media cannot 
+be the sole factor for a rise in mental health issues. I will continue to reserach and look for data sets for my project. 
